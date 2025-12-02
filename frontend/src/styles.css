@@ -1,0 +1,41 @@
+/* Stili globali semplici */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --primary: #1976d2;
+  --success: #2e7d32;
+  --bg: #f7f7f7;
+  --text: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  padding: 16px;
+}
+
+/* Badge semplificate stile Bootstrap-like */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.badge-primary { background: var(--primary); color: #fff; }
+.badge-success { background: var(--success); color: #fff; }
+.badge-default { background: #e0e0e0; color: var(--text); }
