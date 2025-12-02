@@ -19,7 +19,6 @@ Applicazione full-stack per gestire moduli, studenti ed esami.
 - Python >= 3.11
 - Poetry >= 1.7
 - MongoDB (localhost:27017)
-- Git (facoltativo)
 
 ## Struttura del Progetto
 
@@ -134,17 +133,6 @@ npm start
 ## Seeder
 
 Genera moduli, studenti ed esami con snapshot; reset opzionale se DB già popolato.
-
-## Pubblicazione su GitHub
-
-```bash
-git init
-git add .
-git commit -m "Iniziale: Gestione Corsi ITS"
-git branch -M main
-git remote add origin https://github.com/<owner>/<repo>.git
-git push -u origin main
-```
 
 ## Qualità del Codice
 
