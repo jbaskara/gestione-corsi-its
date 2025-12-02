@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "gestione-corsi-its-backend"
+version = "1.0.0"
+description = "Backend FastAPI per Gestione Corsi ITS"
+authors = ["Jhoseph Baskara"]
+packages = [{ include = "app" }]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = { extras = ["standard"], version = "^0.30.0" }
+pydantic = "^2.9.0"
+motor = "^3.5.1"                 # Driver Mongo async (Motor) – basta questo; pymongo è transitivo
+python-dotenv = "^1.0.1"         # Carica .env (comodo in dev)
+faker = "^27.0.0"                # Dati di esempio per il seeder
+email-validator = "^2.2.0"       # Validazione email per Pydantic EmailStr
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"               # Formatter
+ruff = "^0.6.9"                  # Linter (veloce)
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
