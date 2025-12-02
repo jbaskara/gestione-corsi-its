@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    // Target e modulo moderni per Angular 17
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "Node",
+
+    // Manteniamo lo stile di class fields compatibile
+    "useDefineForClassFields": false,
+
+    // Rigorosità consigliata
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Performance e compatibilità
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+
+    // Sorgenti e mappe (utile in dev)
+    "sourceMap": true,
+
+    // Librerie di riferimento
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+
+    // Decorators per Angular
+    "experimentalDecorators": true,
+
+    // Consente a TypeScript di capire i percorsi ESM moderni (aiuta con alcuni pacchetti)
+    "moduleDetection": "force"
+  }
+}
