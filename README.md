@@ -56,7 +56,6 @@ Applicazione full-stack per gestire moduli, studenti ed esami.
 │           ├── reset_collections.py
 │           └── seeder.py
 └── frontend/                   # Frontend Angular
-    ├── .npmrc                  # Config npm (es. engine-strict=false)
     ├── angular.json            # Config Angular workspace
     ├── package.json            # Script npm e dipendenze
     ├── tsconfig.app.json       # Tsconfig specifico dell’app
