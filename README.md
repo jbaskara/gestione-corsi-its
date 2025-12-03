@@ -6,6 +6,8 @@ Applicazione full-stack per gestire moduli, studenti ed esami.
 - Seeder: Faker per dati realistici
 - Orchestratore: setup dipendenze, DB e avvio servizi
 
+---
+
 ## Funzionalità
 
 - Moduli: CRUD, dettagli, studenti iscritti
@@ -13,12 +15,16 @@ Applicazione full-stack per gestire moduli, studenti ed esami.
 - Esami: CRUD, filtri per data e voto
 - Aggiornamenti automatici di riferimenti tra studenti e moduli
 
+---
+
 ## Requisiti
 
 - Node.js >= 18
 - Python >= 3.11
 - Poetry >= 1.7
 - MongoDB (localhost:27017)
+
+---
 
 ## Struttura del Progetto
 
@@ -88,6 +94,8 @@ Applicazione full-stack per gestire moduli, studenti ed esami.
                 └── favicon.svg
 ```
 
+---
+
 ## Setup Rapido
 
 ```bash
@@ -111,17 +119,30 @@ npm install
 npm start
 ```
 
+---
+
+## Anteprima
+
+### Setup + Avvio del Progetto
+![](images/anteprima.gif)
+
+---
+
 ## Configurazione
 
 - MongoDB: `mongodb://localhost:27017`, DB `its_gestione` (settings.py)
 - Frontend API: gestito da `api.interceptor.ts`
 - Porte: backend 8000, frontend 4200
 
+---
+
 ## API Principali
 
 - Moduli: GET/POST/GET{id}/PUT{id}/DELETE{id}
 - Studenti: GET/POST/GET{id}/PUT{id}/DELETE{id}, assign-module, average, exams?min_score
 - Esami: GET/POST/GET{id}/PUT{id}/DELETE{id}
+
+---
 
 ## Frontend (Angular Material)
 
@@ -130,9 +151,13 @@ npm start
 - Esami: elenco con filtri, form
 - Dashboard: conteggi, media globale, esami ≥ 24
 
+---
+
 ## Seeder
 
 Genera moduli, studenti ed esami con snapshot; reset opzionale se DB già popolato.
+
+---
 
 ## Qualità del Codice
 
@@ -142,9 +167,13 @@ Genera moduli, studenti ed esami con snapshot; reset opzionale se DB già popola
 - Normalizzazione data esami (YYYY-MM-DD) e snapshot coerente
 - Indici unici in MongoDB (codice modulo, email/matricola, sessione esame)
 
+---
+
 ## Autore
 
 - Jhoseph Baskara
+
+---
 
 ## Licenza
 
