@@ -83,7 +83,6 @@ Applicazione full-stack per gestire moduli, studenti ed esami.
         │   │   ├── api.service.ts         # Client API (Moduli/Studenti/Esami)
         │   │   └── confirm-dialog.component.ts # Dialog di conferma
         │   └── students/
-        │       ├── assign-module-dialog.component.ts
         │       ├── student-detail.page.ts
         │       ├── student-dialog.component.ts
         │       ├── student-form.page.ts
